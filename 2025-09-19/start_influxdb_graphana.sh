@@ -1,0 +1,1 @@
+docker compose -f influxdb_grafana.yaml up -d

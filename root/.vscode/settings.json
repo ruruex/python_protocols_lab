@@ -1,0 +1,6 @@
+{
+    "python.analysis.extraPaths": [
+        "/root/python_protocol",
+        "/root/python_protocol/2025-09-18"
+    ]
+}
