@@ -211,3 +211,6 @@ __marimo__/
 influxdb_grafana.yaml
 pyrightconfig.json
 **/pyrightconfig.json
+*.pyc
+**/.pyc
+2025-09-18/__pycache__/snmp_v2_4_get_all.cpython-311.pyc
