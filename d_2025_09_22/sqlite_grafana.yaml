@@ -1,0 +1,21 @@
+services:
+  qyt-grafana:
+    image: "grafana/grafana:7.5.11"
+    environment:
+      - GF_INSTALL_PLUGINS=frser-sqlite-datasource
+    user: root
+    volumes:
+#      - /data/grafana:/var/lib/grafana
+      - /root/python_protocol/d_2025_09_22/sqlalchemy_router_int_sqlite3.db
+      - grafana-plugins:/var/lib/grafana/plugins
+    networks:
+      - qyt_net
+    ports:
+      - "3000:3000"
+    depends_on:
+      - "qyt-influx"
+    restart: always
+
+networks:
+  qyt_net:
+    driver: bridge
