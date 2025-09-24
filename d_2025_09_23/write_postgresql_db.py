@@ -29,7 +29,7 @@ c8kv2_ospf = {'process_id': 1,
                                                      {'ip': "2.2.2.2", 'wildmask': "0.0.0.0"}]}]}
 
 username = 'admin'
-password = 'Cisco123'
+password = 'cisco123'
 
 # 汇总后数据
 all_network_data = [{'ip': "10.128.1.51",
